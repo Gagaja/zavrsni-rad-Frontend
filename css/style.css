@@ -1,0 +1,375 @@
+*{box-sizing: border-box}
+a{text-decoration-line: none;}
+.animated{animation-duration: 7s;}
+.fadeIn{
+    animation-delay: 4s;
+}
+::placeholder{
+    color: #00E96C;
+}
+
+
+/*** POCETNA ***/
+body{
+    background-image: url(../image/pozadina-img6.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.page-content{
+   padding: 150px 0;
+  
+}
+.quiz-section{
+    width: 100%;
+    height: auto;
+}
+.img-section{
+    width: 400px;
+    min-height: 200px;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+
+.img-dd{
+    width: 400px;
+    height: auto;
+}
+.img-logo{
+    width: 400px;
+    height: auto;
+}
+.img-logo:hover,.img-dd:hover{
+    transform: scale(1.1,1.1);
+    transition: ease-in 2s;
+   
+}
+.btn-section{
+    width: 400px;
+    min-height: 200px;
+    margin: auto;
+    text-align: center;
+    padding-right: 5px;
+}
+.btn-link1{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #00E96C;
+    background: #0429C2;
+    border-radius: 20px;
+    color: #00E96C;
+    font-size: 20px;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+    text-align: center;
+    
+}
+
+.btn-link1:hover,.btn-link2:hover{
+    text-decoration-line: none;
+    color:#0429C2 ;
+    background: #00E96C;
+    border: 2px solid #0429C2;
+    width: 220px;
+    transition: ease 2s;
+    
+}
+/**Registracija**/
+.form-section{
+    text-align: center
+}
+.txt-title{
+    width: 400px;
+    min-height: 150px;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom:20px;
+}
+.title{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #0429C2;
+    cursor: pointer;
+    transition: ease-in 3s;
+    animation: glavniNaslov 10s infinite;
+
+}
+.title:hover {
+    letter-spacing: 1.3px;
+    transform: scale(1.1,1.1);
+    text-shadow: 2.5px 2.5px  rgba(24, 253, 131, 0.300);
+    cursor: pointer;
+}
+
+.input-txt{
+    color: #00E96C;
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    border: 2px solid #00E96C;
+    background: #0429C2;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+    text-align: center;
+
+}
+.input-txt:hover{
+    color:#00E96C;
+    background: #002F49;
+    border: 2px solid #00E96C;
+    width: 250px;
+    cursor: pointer;
+    transition: ease 2s;
+}
+.title-form{
+    font-size: 35px;
+    color: #00E96C;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+
+}
+.text-form{
+    color: #005D2B;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+#link-reminder{
+    color: #005D2B;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+#link-reminder:hover{
+    color: #841E00;
+    text-decoration: none;
+}
+#link-register{
+
+  
+    padding: 6px 12px;
+    border: 2px solid #00E96C;
+    background: #0429C2;
+    border-radius: 20px;
+    color: #00E96C;
+    font-size: 18px;
+
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+#link-register:hover{
+    text-decoration-line: none;
+    color:#0429C2 ;
+    background: #00E96C;
+    border: 2px solid #0429C2;
+    transition: ease 2s;
+}
+.logout,.login{
+    color: #841E00;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.logout:hover,.login:hover{
+    text-decoration: none;
+}
+#question{
+    display: inline-block;
+    width: 230px;
+    height: 50px;
+    border: 2px solid #00E96C;
+    background: #0429C2;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #00E96C;
+}
+.mrg-left{
+    margin-left: 5px;
+}
+
+
+
+.back-section{
+    width: 100px;
+    height: auto;
+    margin: 0 0 20px 20px;
+    text-align: center;
+    padding: 2px;
+    
+    
+}
+.img-back:hover{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #0429C2;
+    padding: 3px;
+    border-radius: 50%;
+    background: #00E96C;
+}
+
+.send-res{
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    color:#00E96C ;
+    background: #0429C2;
+    border: 2px solid #00E96C;
+   font-size: 18px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    
+  }
+  .send-res:hover{
+    color: #0429C2 ;
+    background:  #00E96C;
+    border: 2px solid #0429C2;
+    width: 100px;
+    transition: ease 2s;
+    cursor: pointer;
+  }
+
+
+.music{
+    
+    text-align: center;
+   margin-bottom: 20px;
+}
+.btn-music{
+   display: inline-block;
+   cursor: pointer;
+  
+}
+
+.mrg-right{
+    margin-right: 10px;
+}
+/**  Signin  **/
+#form-messages {
+    background:#0429C2;
+    border: 1px solid #00E96C;
+    color: #00E96C;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    max-width: 230px;
+}
+
+/** Glavna strana**/
+.header-section{
+    width: 100%;
+    height: auto;
+}
+
+
+.photo-section,.life-section,.level-section,.stats-section{
+   
+    width:25%;
+}
+.level-section,.stats-section{
+    margin-top: 5px;
+}
+.photo{
+ 
+    width:80px;
+    height: 80px;
+    border: 1px solid #0429C2;
+    border-radius: 50%;
+    margin: 15px 30px 0 5px;
+    
+  
+}
+
+.img-life{
+   
+   margin: 22px 0 0 5px;
+}
+.level,.stats{
+    width: 200px;
+    height: 30px;
+    background: #0429C2;
+   
+    border: 1px solid #00E96C;
+}
+.txt-nivo,.txt-stati{
+    margin: 0;
+    color: #0429C2;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+.start-quiz{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#quiz{
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    background: rgba(24, 253, 131, 0.100);
+    border: 1px solid #0429C2;
+    box-shadow: 3px 6px rgba(0, 40, 61, 0.635);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+
+} 
+.score{
+    display: inline-block;
+    font-size: 18px;
+}
+.time{
+    display: inline-block;
+    font-size: 18px;
+}
+.mrg-right2 {
+    margin-right: 35px;
+}
+#quiz_field{
+    width: 600px;
+    height:300px;
+ 
+    margin: 50px auto;
+    border: 1px solid #0429C2;
+    box-shadow: 3px 6px rgba(0, 40, 61, 0.500);
+}
+
+.btn-menu{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #00E96C;
+    background: #0429C2;
+    border-radius: 20px;
+    color: #00E96C;
+    font-size: 20px;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+.btn-menu:hover{
+    color: #0429C2 ;
+    background:  #00E96C;
+    border: 2px solid #0429C2;
+    width: 220px;
+    transition: ease 2s;
+    cursor: pointer;
+
+}
+

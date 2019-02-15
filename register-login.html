@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registracija</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header></header>
+    <div class="page-content">
+
+        <div id="form-registration" class="quiz-section">
+
+            <div class="img-section animated fadeInDown">
+
+                <a href="register-login.html">
+                    <img src="image/4quiz7.png" alt="4quiz" class="img-logo img-responsive">
+                </a>
+            </div>
+            <div class="form-section animated fadeInUp">
+                <form action="" method="post" id="login-form">
+                    <h2 class="title-form">Login</h2>
+                    <br>
+                    <input type="text" id="email-login" class="input-txt" placeholder="User"><br>
+                    <br>
+                    <input type="text" id="password-login" class="input-txt" placeholder="Password"><br>
+                    <a href="" id="link-reminder"> Forgot your password</a>
+                    <br>
+                    <br>
+                    <input type="submit" value="Login" class="send-res"><br>
+                    <br>
+                    <p class="text-form">Create account</p>
+                    <a href="" id="link-register">Register</a>
+
+                </form>
+                <form action="" method="post" id="register-form">
+                    <h2 class="title-form">Register</h2>
+                    <br>
+                    <input type="text" id="email" required class="input-txt" placeholder="Email"> <br><br>
+                    <input type="password" id="password" required class="input-txt" placeholder="Password"><br><br>
+                    <input type="password" id="confirm" required class="input-txt"
+                        placeholder="Confirm Password"><br><br>
+                    <select id="question" required class="input-txt">
+                        <option value="">Choose</option>
+                        <option value="Your mother middle name">Your mother middle name</option>
+                        <option value="Your first pet name">Your first pet name</option>
+                        <option value="Name of your first love">Name of your first love</option>
+                        <option value="Name of your primary school teacher">Name of your primary school teacher</option>
+                    </select><br><br>
+                    <input type="text" id="answer" class="input-txt" required placeholder="Answer"><br><br>
+                    <input type="submit" value="Register" class="send-res"><br><br>
+                    <a href="" class="login">Login</a>
+                </form>
+
+                <form action="" method="post" id="reminder-form">
+                    <h2 class="title-form">Forgot your password </h2>
+                    <input type="text" id="email-reminder" class="input-txt" placeholder="User">
+                    <input type="submit" value="Send" class="send-res">
+                </form>
+                <div id="ulogovan">
+                    <p class="text-form">Ulogovani ste kao:</p> <span id="imeUlogovanogKorisnika"></span>
+                    <a href="" class="logout">Logout</a>
+                    <br><br>
+
+                    <button id="btn1" class="btn-menu" type="button" onclick="show('quiz')">Play</button>
+                    <div id="score-time">
+                        <p class="score mrg-right2">Score:</p>
+                        <p class="time">Time:</p>
+                    </div>
+                    <br>
+                    <div id="quiz" style="display:none">
+
+                        <h2 class="title_question"></h2>
+
+                    </div>
+                </div>
+            </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <footer>
+
+        <div class="music">
+            <audio id="my-audio">
+
+                <source src="music/background-music.mp3" type="audio/mpeg"> Your browser does not support the audio
+                element.
+            </audio>
+
+
+
+            <img src="image/musicbtn.png" alt="play" onclick="playAudio()"
+                class=" btn-music mrg-right img-responsive animated fadeIn" type="button">
+            <img src="image/musicbtn-pause.png" alt="pause" onclick="pauseAudio()"
+                class=" btn-music img-responsive animated fadeIn">
+        </div>
+        <div class="back-section animated fadeIn ">
+            <a class="back " href="index.html">
+                <img src="image/backQuiz5.png" alt="backQuiz" class="img-back">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/ls.js"></script>
+    <script src="js/reg.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+
+
+    </script>
+</body>
+
+</html>
