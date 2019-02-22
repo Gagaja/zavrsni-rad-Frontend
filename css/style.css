@@ -1,5 +1,4 @@
-*{box-sizing: border-box;
-  font-family: 'Laila', serif;}
+*{box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
 a{text-decoration-line: none;}
 /**  animation  **/
 .animated{animation-duration:6s;}
@@ -467,6 +466,7 @@ body{
     letter-spacing: 0.5px;
     font-size: 30px;
     font-weight: bold;
+   
     
 }
 
@@ -606,3 +606,5 @@ body{
 .img-points{
     display: inline-block;
 }
+
+/**kez frames**/

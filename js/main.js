@@ -31,14 +31,18 @@ var fullReset = document.getElementById('fullReset');
 fullReset.addEventListener('click', function (e) {
     location.reload();
 }, false);
-//go to high score page
+//go to high score page to save result
 function showEndHtml() {
     window.location.assign("end.html");
   } 
+
+  //show rank list of the best players
   function showRankList(elementId) {
+    
 
     document.getElementById("highScores").style.display = "none";
 
 
     document.getElementById(elementId).style.display = "block";
+   
 } 

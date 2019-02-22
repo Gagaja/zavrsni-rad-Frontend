@@ -15,7 +15,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
        question: "Mark for iron in the periodic table?",
-        imgSrc: "img/novismileNauka.png",
+       imgSrc: "img/novismileNauka.png",
        choiceA: "Fe",
        choiceB: "Ge",
        choiceC: "Ef",
@@ -61,7 +61,6 @@ let questions = [
    }, {
        question: "What team has won the most Champions League titles?",
        imgSrc: "img/novismileSport.png",
-    
        choiceA: "FC Real Madrid",
        choiceB: "FC Liverpool",
        choiceC: "FC Barcelona",
@@ -73,7 +72,6 @@ let questions = [
    {
        question: "Who won Wimbledon 2011 men's final?",
        imgSrc: "img/novismileSport.png",
-   
        choiceA: "Novak Djoković",
        choiceB: "Rafael Nadal",
        choiceC: "Björn Borg",
@@ -83,7 +81,6 @@ let questions = [
    }, {
        question: "What athlete has won the most gold medals at the Olympics?",
        imgSrc: "img/novismileSport.png",
-        
        choiceA: "Mark Spitz",
        choiceB: "Michael Phelps",
        choiceC: "Michael Johnson",
@@ -105,7 +102,7 @@ let questions = [
        choiceA: "Nirvana",
        choiceB: "Metallica",
        choiceC: "Sex Pistols",
-   
+       choiceD: "Queen",
        correct: "A"
    }, {
        question: "Who plays Charlie Goodson on Anger Management?",
