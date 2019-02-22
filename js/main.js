@@ -13,12 +13,14 @@ function playAudio() {
 function pauseAudio() {
     x.pause();
 };
-function show(elementId) {
+function showHideQuizField(elementId) {
 
-    document.getElementById("playquiz").style.display = "none";
-
-
-    document.getElementById(elementId).style.display = "block";
+    var x = document.getElementById("playquiz");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
 }
 //upload photo
 var loadFile = function (event) {
@@ -27,22 +29,23 @@ var loadFile = function (event) {
 };
 
 var fullReset = document.getElementById('fullReset');
-//reset page
+/*reset page
 fullReset.addEventListener('click', function (e) {
     location.reload();
-}, false);
+}, false);*/
 //go to high score page to save result
 function showEndHtml() {
     window.location.assign("end.html");
   } 
 
-  //show rank list of the best players
-  function showRankList(elementId) {
-    
-
-    document.getElementById("highScores").style.display = "none";
+  //show and hide rank list of the best players
 
 
-    document.getElementById(elementId).style.display = "block";
-   
-} 
+function showHideRankList(elementId) {
+    var x = document.getElementById("highScores");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }

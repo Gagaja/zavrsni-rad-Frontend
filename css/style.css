@@ -1,15 +1,22 @@
 *{box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
 a{text-decoration-line: none;}
 /**  animation  **/
-.animated{animation-duration:6s;}
+.animated{animation-duration:7.5s;}
 .animatedField{
     animation-delay: 0;
     animation-duration: 3s;
 }
-.in-music0{
-    animation-delay: 1.5s;
+.in-music{
+    animation-delay: 5.5s;
 }
-
+.in-music1{
+    animation-delay: 6s;
+}
+.in-social{
+    animation-delay: 6.5s;
+}
+.in-btn{
+    animation-delay: 7s;}
 .in1{
     animation-delay: 1.5s;
 }
@@ -579,16 +586,13 @@ body{
     height :59px;
     top:170px;
     left:370px;
-    font-size: 12px;
-    
+    font-size: 10px;
     text-align: center;
     color: #00E96C;
+    animation: highscore 5s infinite;
 }
 /**high score**/
-#highScores{
-    
-   
-}
+
 #highScoresList{
     display: inline-block;
     padding-left: 0;
@@ -606,5 +610,55 @@ body{
 .img-points{
     display: inline-block;
 }
+/**social networks**/
+
+.social-section{
+
+    
+    text-align: center;
+    
+ 
+}
+.social-txt{
+    color: #002F49;
+    font-size: 14px;
+}
+.social{
+   
+    display: inline-block;
+    color: #002F49;
+    
+}
+.fa{
+    color: #002F49; 
+}
+.fa-facebook-square,.fa-twitter-square{
+    margin-right: 20px;
+  
+
+}
+
+.social:hover{
+    color: #841E00;
+    text-decoration: none;
+}
 
 /**kez frames**/
+@keyframes highscore {
+    0% {
+        color: #fce993;
+    }
+    25% {
+        color: #40ffe1;
+    }
+    50% {
+        color: #fd0505;
+    }
+    75% {
+		color: #fff;
+		border-color: transparent;
+    }
+    100% {
+        color: #deff4c;
+    }
+}

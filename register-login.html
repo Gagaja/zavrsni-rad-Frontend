@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registracija</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
-
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -81,7 +81,7 @@
                     <a href="" class="logout animated fadeIn in3">Logout</a>
                     <br><br>
                     <div class="container form-section animated fadeIn in4">
-                            <button id="finalScore" class="btn-menu " onclick="showRankList('highScores');">Rank list</button>
+                            <button id="finalScore" class="btn-menu " onclick="showHideRankList('highScores');">Rank list</button>
                         <div id="highScores" style="display:none" class="animated fadeInRight">
                             <img src="image/points.png" alt="points" class="img-points img-responsive">
                             <br><br>
@@ -94,7 +94,7 @@
 
 
                     <button id="btn1" class="btn-menu animated fadeIn in5" type="button"
-                        onclick="show('playquiz')">Play</button>
+                        onclick="showHideQuizField('playquiz')">Play</button>
 
                     <br>
                     <div id="playquiz" style="display:none" class="animated fadeIn animatedField">
@@ -124,11 +124,11 @@
                             </div>
 
                         </div>
-                        <div class="reset">
+                       <!--<div class="reset">
                             <button id='fullReset' class="animated fadeIn in5">Restart Quiz</button>
-                        </div>
+                        </div>--> 
                     </div>
-                    <br><br>
+                   
 
                 </div>
 
@@ -151,16 +151,37 @@
 
 
         <img src="image/musicbtn.png" alt="play" onclick="playAudio()"
-            class=" btn-music mrg-right img-responsive animated fadeIn">
+            class=" btn-music mrg-right img-responsive animated fadeIn in-music">
         <img src="image/musicbtn-pause.png" alt="pause" onclick="pauseAudio()"
-            class=" btn-music img-responsive animated fadeIn ">
+            class=" btn-music img-responsive animated fadeIn in-music1">
     </div>
-    <div class="back-section animated fadeIn">
+    <br><br>
+   
+          <div class="social-section animated fadeIn in-social" >
+              <p class="social-txt">Follow Us</p>
+              
+            <a class="social" href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square fa-2x"></i>
+            </a>
+
+            <a class="social" href="https://twitter.com/" target="_blank">
+                <i class="fa fa-twitter-square fa-2x" ></i>
+            </a>
+
+            <a class="social" href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-linkedin-square fa-2x" ></i>
+            </a>
+
+
+        </div>
+        <br><br>
+
+    <div class="back-section animated fadeIn in-btn">
         <a class="back " href="index.html">
             <img src="image/backQuiz5.png" alt="backQuiz" class="img-back ">
         </a>
     </div>
-
+   
 
 
     <script src="js/ls.js"></script>
