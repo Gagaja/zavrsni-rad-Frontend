@@ -4,7 +4,7 @@ var LS = {
         if (trenutno == null) {
             localStorage.setItem(imeStavke, '{}');
         }
-    }, set: function (imeStavke, item) { // LS.set('prvi',{a:5,b:7});
+    }, set: function (imeStavke, item) {
         localStorage.setItem(imeStavke, JSON.stringify(item));
     }, get: function (imeStavke) {
         return JSON.parse(localStorage.getItem(imeStavke));

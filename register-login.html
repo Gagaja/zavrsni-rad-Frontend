@@ -16,6 +16,7 @@
 
 <body>
     <header></header>
+    
     <div class="page-content">
 
         <div id="form-registration" class="quiz-section">
@@ -73,8 +74,9 @@
                 <div id="ulogovan">
 
                     <br>
-                    <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)"></p>
-                    <p><label for="file" class="upload-txt animated fadeIn in1" id="label">Upload photo</label></p>
+                   
+                  <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display:none"  ></p>
+                    <p><label for="file" class="upload-txt animated fadeIn in1" id="label" >Upload photo</label></p>
                     <img id="output" class="animated fadeIn in2 img-responsive"> <br><br>
                     <span id="imeUlogovanogKorisnika" class="animated fadeIn in3"></span>
                     <br>
@@ -124,9 +126,9 @@
                             </div>
 
                         </div>
-                       <!--<div class="reset">
+                       
                             <button id='fullReset' class="animated fadeIn in5">Restart Quiz</button>
-                        </div>--> 
+                        </div>
                     </div>
                    
 
@@ -139,12 +141,14 @@
 
     </div>
 
-
+    <br><br>
+    <br><br>
 
     <div class="music">
-        <audio id="my-audio">
+        <audio id="my-audio" autoplay loop>
 
-            <source src="music/background-music.mp3" type="audio/mpeg"> Your browser does not support the audio
+            <source src="music/background-music.mp3" type="audio/mpeg">
+            <source src="music/background-music.ogg" type="audio/ogg"> Your browser does not support the audio
             element.
         </audio>
 
@@ -155,6 +159,7 @@
         <img src="image/musicbtn-pause.png" alt="pause" onclick="pauseAudio()"
             class=" btn-music img-responsive animated fadeIn in-music1">
     </div>
+    <br><br>
     <br><br>
    
           <div class="social-section animated fadeIn in-social" >
@@ -191,6 +196,7 @@
 
 
     <script src="quizstart.js"> </script>
+    <script src="questions.js"></script>
     <script>
         //Rank list
         const highScoresList = document.getElementById("highScoresList");

@@ -41,6 +41,9 @@ a{text-decoration-line: none;}
 .in8{
     animation-delay: 5s;
 }
+.in-question{
+    animation-duration: 0.5s !important;
+}
 ::placeholder{
     color: #00E96C;
 
@@ -49,14 +52,20 @@ a{text-decoration-line: none;}
 
 /*** Index ***/
 body{
-    background-image: url(../image/pozadina-img6.png);
+    background-image: url(../image/pozadina-img7.png);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    
+    background-repeat: no-repeat;
+   
+  
+ 
 }
+    
+
+
 .page-content{
-   padding: 100px 0;
+   padding: 70px 0;
 
 
   
@@ -137,7 +146,7 @@ body{
     color: #0429C2;
     cursor: pointer;
     transition: ease-in 3s;
-    animation: glavniNaslov 10s infinite;
+    
 
 }
 .title:hover {
@@ -340,8 +349,13 @@ body{
 }
 .btn-music{
    display: inline-block;
-   cursor: pointer;
+   
   
+  
+}
+.btn-music:hover{
+    transform: scale(1.05,1.05);
+    cursor: pointer;
 }
 
 .mrg-right{
@@ -434,13 +448,15 @@ body{
     left:350px;
     top:80px;
     padding:20px 0;
+   
   
 }
 #start:hover{
     
-    border: 2px solid #00E96C;
+    border: 2px solid #0429C2;
     color : #00E96C;
-    background:#0429C2;
+    background:#002F49;
+    transform: scale(1.1,1.1);
 
 }
 
@@ -448,8 +464,8 @@ body{
     width : 100px;
     height : 100px;
     position: absolute;
-    left : 3px;
-    top : 3px;
+    left : 5px;
+    top : 5px;
 }
 #qImg img{
     width : 100px;
@@ -493,6 +509,7 @@ body{
     cursor: pointer;
     padding : 3px ;
     color: #002F49;
+    
     
 }
 .choice:hover{
@@ -582,14 +599,14 @@ body{
 .highscore-txt{
     position: absolute;
     display: block;
-    width : 59px;
-    height :59px;
+    width : 63px;
+    height :63px;
     top:170px;
     left:370px;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     color: #00E96C;
-    animation: highscore 5s infinite;
+    animation: highscore 6s infinite;
 }
 /**high score**/
 
@@ -621,7 +638,7 @@ body{
 }
 .social-txt{
     color: #002F49;
-    font-size: 14px;
+    font-size: 15px;
 }
 .social{
    
@@ -629,36 +646,48 @@ body{
     color: #002F49;
     
 }
+
 .fa{
     color: #002F49; 
 }
+.fa:hover{
+    color: #841E00;
+    text-decoration: none;
+    transform: scale(1.1,1.1);
+    
+}
 .fa-facebook-square,.fa-twitter-square{
-    margin-right: 20px;
+    margin-right: 10px;
   
 
 }
 
-.social:hover{
-    color: #841E00;
-    text-decoration: none;
-}
 
-/**kez frames**/
+/**key frames**/
 @keyframes highscore {
     0% {
-        color: #fce993;
+        color: #002F49;
     }
-    25% {
-        color: #40ffe1;
+   
+   20% {
+        color:#22FD00 ;
+   
     }
-    50% {
-        color: #fd0505;
+   
+   40% {
+        color: #002F49;
     }
-    75% {
+    
+    60% {
 		color: #fff;
-		border-color: transparent;
+    
     }
+    80% {
+		color: #002F49;
+    
+    }
+    
     100% {
-        color: #deff4c;
+        color: #FF8100;
     }
 }
