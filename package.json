@@ -1,0 +1,22 @@
+{
+  "name": "zavrsni_kviz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "quizstart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gagaja/zavrsni-rad-Frontend.git"
+  },
+  "author": "GagajaDesign",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gagaja/zavrsni-rad-Frontend/issues"
+  },
+  "homepage": "https://github.com/Gagaja/zavrsni-rad-Frontend#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

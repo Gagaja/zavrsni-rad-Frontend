@@ -14,7 +14,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question: "Mark for iron in the periodic table?",
-        imgSrc: "img/novismileNauka.png",
+        imgSrc: "../img/novismileNauka.png",
         choiceA: "Fe",
         choiceB: "Ge",
         choiceC: "Ef",
@@ -23,7 +23,7 @@ let questions = [
         correct: "A"
     }, {
         question: "Who actually discovered penicillin?",
-        imgSrc: "img/novismileNauka.png",
+        imgSrc: "../img/novismileNauka.png",
         choiceA: "Thomas Edison",
         choiceB: "Alexander Fleming",
         choiceC: "Nikola Tesla",
@@ -32,7 +32,7 @@ let questions = [
         correct: "B"
     }, {
         question: "The longest river in Europe is?",
-        imgSrc: "img/novismileNauka.png",
+        imgSrc: "../img/novismileNauka.png",
         choiceA: "Sava",
         choiceB: "Rhine",
         choiceC: "Volga",
@@ -41,7 +41,7 @@ let questions = [
         correct: "C"
     }, {
         question: "Who is the father of the mathematics?",
-        imgSrc: "img/novismileNauka.png",
+        imgSrc: "../img/novismileNauka.png",
         choiceA: "Archimedes",
         choiceB: "Socrates",
         choiceC: "Pythagoras",
@@ -50,7 +50,7 @@ let questions = [
         correct: "A"
     }, {
         question: "For which club Michael Jordan played the most matches?",
-        imgSrc: "img/novismileSport.png",
+        imgSrc: "../img/novismileSport.png",
         choiceA: "Charlotte Hornets",
         choiceB: "Miami Heat",
         choiceC: "LA Lakers",
@@ -59,7 +59,7 @@ let questions = [
         correct: "D"
     }, {
         question: "What team has won the most Champions League titles?",
-        imgSrc: "img/novismileSport.png",
+        imgSrc: "../img/novismileSport.png",
         choiceA: "FC Real Madrid",
         choiceB: "FC Liverpool",
         choiceC: "FC Barcelona",
@@ -70,7 +70,7 @@ let questions = [
     },
     {
         question: "Who won Wimbledon 2011 men's final?",
-        imgSrc: "img/novismileSport.png",
+        imgSrc: "../img/novismileSport.png",
         choiceA: "Novak Djoković",
         choiceB: "Rafael Nadal",
         choiceC: "Björn Borg",
@@ -79,7 +79,7 @@ let questions = [
         correct: "A"
     }, {
         question: "What athlete has won the most gold medals at the Olympics?",
-        imgSrc: "img/novismileSport.png",
+        imgSrc: "../img/novismileSport.png",
         choiceA: "Mark Spitz",
         choiceB: "Michael Phelps",
         choiceC: "Michael Johnson",
@@ -88,7 +88,7 @@ let questions = [
         correct: "B"
     }, {
         question: "Who has won the most Oscars ever?",
-        imgSrc: "img/novismileZabava2.png",
+        imgSrc: "../img/novismileZabava2.png",
         choiceA: "Bruce Willis",
         choiceB: "Meryl Streep",
         choiceC: "Jack Nicholson",
@@ -97,25 +97,25 @@ let questions = [
         correct: "D"
     }, {
         question: "Who sing song Smells like teen spirit?",
-        imgSrc: "img/novismileZabava2.png",
+        imgSrc: "../img/novismileZabava2.png",
         choiceA: "Nirvana",
         choiceB: "Metallica",
         choiceC: "Sex Pistols",
         choiceD: "Queen",
+
         correct: "A"
     }, {
         question: "Who plays Charlie Goodson on Anger Management?",
-        imgSrc: "img/novismileZabava2.png",
+        imgSrc: "../img/novismileZabava2.png",
         choiceA: "Charlie Harper",
         choiceB: "Bruce Willis",
         choiceC: "Charlie Sheen",
         choiceD: "Jack Nicholson",
 
-
         correct: "C"
     }, {
         question: "The name of the pub where Homer drinks beer?",
-        imgSrc: "img/novismileZabava2.png",
+        imgSrc: "../img/novismileZabava2.png",
         choiceA: "Mooo",
         choiceB: "Moe",
         choiceC: "Om",
@@ -124,7 +124,7 @@ let questions = [
         correct: "B"
     }, {
         question: "Who painted The scream?",
-        imgSrc: "img/novismileArt.png",
+        imgSrc: "../img/novismileArt.png",
         choiceA: "Edvard Munch",
         choiceB: "Rembrandt",
         choiceC: "Pablo Picasso",
@@ -133,15 +133,16 @@ let questions = [
         correct: "A"
     }, {
         question: "Who won Nobel prize for literature 1961?",
-        imgSrc: "img/novismileArt.png",
+        imgSrc: "../img/novismileArt.png",
         choiceA: "Robert Hofstadter",
         choiceB: "Rudolf Mössbauer",
         choiceC: "Ivo Andrić",
         choiceD: "Melvin Calvin",
+
         correct: "C"
     }, {
         question: "Who wrote  The Jungle Book?",
-        imgSrc: "img/novismileArt.png",
+        imgSrc: "../img/novismileArt.png",
         choiceA: "Edgar Allan Poe",
         choiceB: "Rudyard Kipling",
         choiceC: "Lewis Carroll",
@@ -150,7 +151,7 @@ let questions = [
         correct: "B"
     }, {
         question: "Who wrote The Four Seasons?",
-        imgSrc: "img/novismileArt.png",
+        imgSrc: "../img/novismileArt.png",
         choiceA: "Frédéric Chopin",
         choiceB: "Richard Wagner ",
         choiceC: "Johannes Brahms",
@@ -159,7 +160,7 @@ let questions = [
         correct: "D"
     }, {
         question: "When penicillin was first used?",
-        imgSrc: "img/novismileNauka.png",
+        imgSrc: "../img/novismileNauka.png",
         choiceA: "Mar. 14, in 1932",
         choiceB: "Mar. 14, in 1942 ",
         choiceC: "Mar. 14, in 1952",
@@ -168,7 +169,7 @@ let questions = [
         correct: "B"
     }, {
         question: "Atomic Number of element iron?",
-        imgSrc: "img/novismileNauka.png",
+        imgSrc: "../img/novismileNauka.png",
         choiceA: "26",
         choiceB: "36 ",
         choiceC: "16",
@@ -177,7 +178,7 @@ let questions = [
         correct: "A"
     }, {
         question: "How long is river Volga?",
-        imgSrc: "img/novismileNauka.png",
+        imgSrc: "../img/novismileNauka.png",
         choiceA: "3,030 km",
         choiceB: "3,730 km ",
         choiceC: "2,530 km",
@@ -186,7 +187,7 @@ let questions = [
         correct: "D"
     }, {
         question: " When the mathematics Day is celebrated ?",
-        imgSrc: "img/novismileNauka.png",
+        imgSrc: "../img/novismileNauka.png",
         choiceA: "March 9",
         choiceB: "March 8 ",
         choiceC: "March 6",
@@ -195,7 +196,7 @@ let questions = [
         correct: "C"
     }, {
         question: "How many championships has Jordan won?",
-        imgSrc: "img/novismileSport.png",
+        imgSrc: "../img/novismileSport.png",
         choiceA: "Six",
         choiceB: "Seven",
         choiceC: "None",
@@ -204,7 +205,7 @@ let questions = [
         correct: "A"
     }, {
         question: "Which player has won the Champions League the most times?",
-        imgSrc: "img/novismileSport.png",
+        imgSrc: "../img/novismileSport.png",
         choiceA: "Clarence Seedorf",
         choiceB: "Paolo Maldini ",
         choiceC: "Paco Gento",
@@ -215,7 +216,7 @@ let questions = [
     },
     {
         question: "Who lose Wimbledon 2011 men's final?",
-        imgSrc: "img/novismileSport.png",
+        imgSrc: "../img/novismileSport.png",
         choiceA: "Novak Djoković",
         choiceB: "Rafael Nadal",
         choiceC: "Björn Borg",
@@ -224,7 +225,7 @@ let questions = [
         correct: "B"
     }, {
         question: "Which country has won the most gold medals in Olympic history?",
-        imgSrc: "img/novismileSport.png",
+        imgSrc: "../img/novismileSport.png",
         choiceA: "China",
         choiceB: "Great Britain",
         choiceC: "United States",
@@ -233,7 +234,7 @@ let questions = [
         correct: "C"
     }, {
         question: "Who was the first person to win an Oscar?",
-        imgSrc: "img/novismileZabava2.png",
+        imgSrc: "../img/novismileZabava2.png",
         choiceA: "Marlon Brando",
         choiceB: "Emil Jannings",
         choiceC: "Omar Sharif",
@@ -242,15 +243,16 @@ let questions = [
         correct: "B"
     }, {
         question: "Who was a frontman of Nirvana?",
-        imgSrc: "img/novismileZabava2.png",
+        imgSrc: "../img/novismileZabava2.png",
         choiceA: "David Bowie",
         choiceB: "John Lennon",
         choiceC: "Jim Morrison",
         choiceD: "Kurt Cobain",
+
         correct: "D"
     }, {
         question: "How many seasons are there for anger management?",
-        imgSrc: "img/novismileZabava2.png",
+        imgSrc: "../img/novismileZabava2.png",
         choiceA: "Two",
         choiceB: "One",
         choiceC: "Five",
@@ -260,7 +262,7 @@ let questions = [
         correct: "A"
     }, {
         question: "The last name of the owner of pub where Homer drinks beer?",
-        imgSrc: "img/novismileZabava2.png",
+        imgSrc: "../img/novismileZabava2.png",
         choiceA: "Simpsons",
         choiceB: "Szyslak",
         choiceC: "Flanders",
@@ -268,8 +270,8 @@ let questions = [
 
         correct: "B"
     }, {
-        question: "When was the scream painted?",
-        imgSrc: "img/novismileArt.png",
+        question: "When was The Scream painted?",
+        imgSrc: "../../img/novismileArt.png",
         choiceA: "1853",
         choiceB: "1873",
         choiceC: "1893",
@@ -278,7 +280,7 @@ let questions = [
         correct: "C"
     }, {
         question: "Which country gives Nobel Prizes?",
-        imgSrc: "img/novismileArt.png",
+        imgSrc: "../img/novismileArt.png",
         choiceA: "Sweden",
         choiceB: "Germany",
         choiceC: "Serbia",
@@ -287,7 +289,7 @@ let questions = [
         correct: "A"
     }, {
         question: "When was the jungle book written?",
-        imgSrc: "img/novismileArt.png",
+        imgSrc: "../img/novismileArt.png",
         choiceA: "1862",
         choiceB: "1872",
         choiceC: "1882",
@@ -296,7 +298,7 @@ let questions = [
         correct: "D"
     }, {
         question: "When was the Four Seasons composed?",
-        imgSrc: "img/novismileArt.png",
+        imgSrc: "../img/novismileArt.png",
         choiceA: "1733",
         choiceB: "1713 ",
         choiceC: "1723",
@@ -420,11 +422,11 @@ function scoreRender() {
     const scorePerCent = Math.round(100 * score / questions.length);
 
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
-        (scorePerCent >= 60) ? "img/4.png" :
-            (scorePerCent >= 40) ? "img/3.png" :
-                (scorePerCent >= 20) ? "img/2.png" :
-                    "img/1.png";
+    let img = (scorePerCent >= 80) ? "../img/5.png" :
+        (scorePerCent >= 60) ? "../img/4.png" :
+            (scorePerCent >= 40) ? "../img/3.png" :
+                (scorePerCent >= 20) ? "../img/2.png" :
+                    "../img/1.png";
 
     scoreDiv.innerHTML = "<img src=" + img + ">" + "<br/>";
     scoreDiv.innerHTML += "<p class='score-txt'>" + scorePerCent + "%</p>" + "<br/>";

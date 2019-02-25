@@ -8,17 +8,17 @@ var LS = {
         localStorage.setItem(imeStavke, JSON.stringify(item));
     }, get: function (imeStavke) {
         return JSON.parse(localStorage.getItem(imeStavke));
-    },remove: function (imeStavke) {
+    }, remove: function (imeStavke) {
         localStorage.removeItem(imeStavke);
     }, setElement: function (imeStavke, imeKljuca, vrednost) {
-        var trenutno=this.get(imeStavke);
-        trenutno[imeKljuca]=vrednost;
-        this.set(imeStavke,trenutno);
+        var trenutno = this.get(imeStavke);
+        trenutno[imeKljuca] = vrednost;
+        this.set(imeStavke, trenutno);
     }, getElement: function (imeStavke, imeKljuca) {
         return this.get(imeStavke)[imeKljuca];
     }, removeElement: function (imeStavke, imeKljuca) {
-        var trenutno=this.get(imeStavke);
+        var trenutno = this.get(imeStavke);
         delete trenutno[imeKljuca];
-        this.set(imeStavke,trenutno);
+        this.set(imeStavke, trenutno);
     }
 }

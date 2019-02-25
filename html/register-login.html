@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registracija</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <header></header>
+
+    <div class="page-content">
+
+        <div id="form-registration" class="quiz-section">
+
+            <div class="img-section animated fadeInDown">
+
+                <a href="register-login.html">
+                    <img src="../image/4quiz7.png" alt="4quiz" class="img-logo img-responsive">
+                </a>
+            </div>
+            <div class="form-section ">
+                <form action="" method="post" id="login-form">
+                    <h2 class="title-form animated fadeIn in1">Login</h2>
+                    <br>
+                    <input type="text" id="email-login" class="input-txt animated fadeIn in2" placeholder="User"><br>
+                    <br>
+                    <input type="text" id="password-login" class="input-txt animated fadeIn in3"
+                        placeholder="Password"><br>
+                    <a href="" id="link-reminder" class="animated fadeIn in4"> Forgot your password</a>
+                    <br>
+                    <br>
+                    <input type="submit" value="Login" class="send-res animated fadeIn in5"><br>
+                    <br>
+                    <p class="text-form animated fadeIn in6">Create account</p>
+                    <a href="" id="link-register" class="animated fadeIn in7">Register</a>
+
+                </form>
+                <form action="" method="post" id="register-form">
+                    <h2 class="title-form animated fadeIn in1">Register</h2>
+                    <br>
+                    <input type="text" id="email" required class="input-txt animated fadeIn in2" placeholder="Email">
+                    <br><br>
+                    <input type="password" id="password" required class="input-txt animated fadeIn in3"
+                        placeholder="Password"><br><br>
+                    <input type="password" id="confirm" required class="input-txt animated fadeIn in4"
+                        placeholder="Confirm Password"><br><br>
+                    <select id="questionform" required class="input-txt animated fadeIn in5">
+                        <option value="">Choose</option>
+                        <option value="Your favorite friend name">Your best friend name</option>
+                        <option value="Your first pet name">Your first pet name</option>
+                        <option value="Name of your first love">Name of your first love</option>
+                        <option value="Your favorite ice cream"> Your favorite ice cream</option>
+                    </select><br><br>
+                    <input type="text" id="answer" class="input-txt animated fadeIn in6" required
+                        placeholder="Answer"><br><br>
+                    <input type="submit" value="Register" class="send-res animated fadeIn in7"><br><br>
+                    <a href="" class="login animated fadeIn in8">Login</a>
+                </form>
+
+                <form action="" method="post" id="reminder-form">
+                    <h2 class="title-form animated fadeIn in1">Forgot your password </h2>
+                    <input type="text" id="email-reminder" class="input-txt animated fadeIn in2" placeholder="User">
+                    <input type="submit" value="Send" class="send-res animated fadeIn in3">
+                </form>
+                <div id="ulogovan">
+
+                    <br>
+
+                    <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)"
+                            style="display:none"></p>
+                    <p><label for="file" class="upload-txt animated fadeIn in1" id="label">Upload photo</label></p>
+                    <img id="output" class="animated fadeIn in2 img-responsive"> <br><br>
+                    <span id="imeUlogovanogKorisnika" class="animated fadeIn in3"></span>
+                    <br>
+                    <a href="" class="logout animated fadeIn in3">Logout</a>
+                    <br><br>
+                    <div class="container form-section animated fadeIn in4">
+                        <button id="finalScore" class="btn-menu " onclick="showHideRankList('highScores');">Rank
+                            list</button>
+                        <div id="highScores" style="display:none" class="animated fadeInRight">
+                            <img src="image/points.png" alt="points" class="img-points img-responsive">
+                            <br><br>
+
+                            <ul id="highScoresList"></ul>
+
+                        </div>
+                    </div>
+
+
+
+                    <button id="btn1" class="btn-menu animated fadeIn in5" type="button"
+                        onclick="showHideQuizField('playquiz')">Play</button>
+
+                    <br>
+                    <div id="playquiz" style="display:none" class="animated fadeIn animatedField">
+                        <br>
+                        <div id="container" class="animated fadeIn animatedField">
+                            <div id="start">Start Quiz!</div>
+                            <div id="quiz" style="display: none">
+                                <div id="question"></div>
+                                <div id="qImg"></div>
+                                <div id="choices">
+                                    <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                                    <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                                    <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                                    <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+
+                                </div>
+                                <div id="timer">
+                                    <img src="image/time.png" alt="" class="timer-img">
+                                    <div id="counter"></div>
+                                    <div id="btimeGauge"></div>
+                                    <div id="timeGauge"></div>
+                                </div>
+                                <div id="progress"></div>
+                            </div>
+                            <div id="scoreContainer" style="display: none" onclick="showEndHtml()">
+
+                            </div>
+
+                        </div>
+
+                        <button id='fullReset' class="animated fadeIn in5">Restart Quiz</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <br><br>
+    <br><br>
+
+    <div class="music">
+        <audio id="my-audio" autoplay loop>
+
+            <source src="../music/background-music.mp3" type="audio/mpeg">
+            <source src="../music/background-music.ogg" type="audio/ogg"> Your browser does not support the audio
+            element.
+        </audio>
+
+
+
+        <img src="../image/musicbtn.png" alt="play" onclick="playAudio()"
+            class=" btn-music mrg-right img-responsive animated fadeIn in-music">
+        <img src="../image/musicbtn-pause.png" alt="pause" onclick="pauseAudio()"
+            class=" btn-music img-responsive animated fadeIn in-music1">
+    </div>
+    <br><br>
+    <br><br>
+
+    <div class="social-section animated fadeIn in-social">
+        <p class="social-txt">Follow Us</p>
+
+        <a class="social" href="https://www.facebook.com/" target="_blank">
+            <i class="fa fa-facebook-square fa-2x"></i>
+        </a>
+
+        <a class="social" href="https://twitter.com/" target="_blank">
+            <i class="fa fa-twitter-square fa-2x"></i>
+        </a>
+
+        <a class="social" href="https://www.instagram.com/" target="_blank">
+            <i class="fa fa-linkedin-square fa-2x"></i>
+        </a>
+
+
+    </div>
+    <br><br>
+
+    <div class="back-section animated fadeIn in-btn">
+        <a class="back " href="index.html">
+            <img src="../image/backQuiz5.png" alt="backQuiz" class="img-back ">
+        </a>
+    </div>
+
+
+
+    <script src="../js/ls.js"></script>
+    <script src="../js/reg.js"></script>
+    <script src="../js/main.js"></script>
+
+
+
+    <script src="../quizstart.js"> </script>
+    
+    <script>
+        //Rank list
+        const highScoresList = document.getElementById("highScoresList");
+        const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+        highScoresList.innerHTML = highScores
+            .map(score => {
+                return `<li class="high-score">${score.name} - ${score.score}</li>`;
+            })
+            .join("");
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -662,6 +662,16 @@ body{
 
 }
 
+/**end page**/
+#finalScoreTxt{
+    display: inline-block;
+    color: #002F49;
+    text-align: center;
+    font-size: 20px;
+    
+    
+}
+
 
 /**key frames**/
 @keyframes highscore {

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Score page</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+        <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="page-content">
+        <div id="form-registration" class="quiz-section">
+
+            <div class="img-section animated fadeInDown">
+
+                <a href="register-login.html">
+                    <img src="../image/4quiz7.png" alt="4quiz" class="img-logo img-responsive">
+                </a>
+            </div>
+
+        </div>
+        <div class="form-section">
+            <!--<div  id="finalScoreTxt"></div> <br><br>-->
+
+            <input type="text" id="email" class="input-txt animated fadeIn in1" placeholder="User"><br><br>
+            <button type="submit" class="btn input-txt animated fadeIn in2" id="saveScoreBtn"
+                onclick="saveHighScore(event)" disabled>Save score</button>
+        </div>
+        <br><br>
+        <div class="music">
+            <audio id="my-audio">
+
+                <source src="../music/background-music.mp3" type="audio/mpeg"> Your browser does not support the audio
+                element.
+            </audio>
+
+
+
+            <img src="../image/musicbtn.png" alt="play" onclick="playAudio()"
+                class=" btn-music mrg-right img-responsive animated fadeIn">
+            <img src="../image/musicbtn-pause.png" alt="pause" onclick="pauseAudio()"
+                class=" btn-music img-responsive animated fadeIn">
+        </div>
+        <br><br>
+
+        <div class="social-section animated fadeIn">
+            <p class="social-txt">Follow Us</p>
+
+            <a class="social" href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square fa-2x"></i>
+            </a>
+
+            <a class="social" href="https://twitter.com/" target="_blank">
+                <i class="fa fa-twitter-square fa-2x"></i>
+            </a>
+
+            <a class="social" href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+
+
+        </div>
+        <br><br>
+
+        <div class="back-section animated fadeIn ">
+            <a class="back " href="register-login.html">
+                <img src="../image/backQuiz5.png" alt="backQuiz" class="img-back">
+            </a>
+        </div>
+        <script src="../js/ls.js"></script>
+        <script src="../js/reg.js"></script>
+        <script src="../js/main.js"></script>
+
+
+        <script>
+
+            const username = document.getElementById("email");
+            const saveScoreBtn = document.getElementById("saveScoreBtn");
+            //   const finalScore = document.getElementById("finalScoreTxt");
+            const mostRecentScore = localStorage.getItem("mostRecentScore");
+
+            const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+            const MAX_HIGH_SCORES = 4;
+
+            //  finalScore.innerText = mostRecentScore;
+
+            username.addEventListener("keyup", () => {
+                saveScoreBtn.disabled = !username.value;
+            });
+
+            saveHighScore = e => {
+                console.log("clicked the save button!");
+                e.preventDefault();
+
+                const score = {
+                    score: Math.floor(Math.random() * 100),
+                    name: username.value,
+                };
+                highScores.push(score);
+                highScores.sort((a, b) => b.score - a.score);
+                highScores.splice(4);
+
+                localStorage.setItem("highScores", JSON.stringify(highScores));
+                window.location.assign("register-login.html");
+            };
+        </script>
+</body>
+
+</html>

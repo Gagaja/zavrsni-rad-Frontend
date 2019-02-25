@@ -41,14 +41,14 @@ d("link-reminder")
 
 d("reminder-form").addEventListener("submit", function (event) {
     event.preventDefault();
-    var email=d('email-reminder').value;
-    var korisnik = LS.getElement('korisnici',email);
-    if(korisnik){
+    var email = d('email-reminder').value;
+    var korisnik = LS.getElement('korisnici', email);
+    if (korisnik) {
 
     } else {
         alert("Korisnik ")
     }
-    
+
 });
 d("login-form").addEventListener("submit", function (event) {
     event.preventDefault();
