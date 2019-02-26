@@ -1,31 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js"></script>
 </head>
+
 <body>
-   <div class="page-content">
+    <div class="page-content">
 
-    <div class="quiz-section">
-        <div class="img-section animated fadeInDown">
-            <div>
+        <div class="quiz-section">
+            <div class=" help-img animated fadeInDown">
+
                 <a href="index.html">
-                    <img src="image/4QuizWelcom6.png" alt="4QuizWelcom" class="img-dd img-responsive">
+                    <img src="../image/4quiz7small.png" alt="4quiz" class="img-logo img-responsive">
                 </a>
-                <br>
-                <br>
-                <a href="index.html">
-                    <img src="image/4quiz7.png" alt="4quiz" class="img-logo img-responsive">
-                </a>
+
             </div>
-        </div>
-        <div class="help-text">
-         <h2 class="title">Help</h2>
+            <div class="container help-content animated fadeIn in2">
+                <h2 class="help-title animated fadeIn in4">Help</h2>
+                <p class="help-txt animated fadeIn in5">4Quiz je kviz znanja gde će takmičari imati priliku da provere
+                    svoje znanje iz 4 oblasti. <br>
+                    Takmičari će odgovarati na pitanja iz nauke, sporta, zabave i umetnosti. </p> <br> <br>
+                <p class="help-txt animated fadeIn in5"> Svaka oblast će sadržati više pojedinačnih celina. Tako da će
+                    oblast nauka sadržati celine kao što su <br>
+                    matematika,hemija,fizika,geografija... Oblast sport bi sadržala sve sportove ,oblast zabava će
+                    sadržati <br>
+                    muziku,film,crtani film,serije, a oblast umetnost književsnost,slikarstvo, strip.</p>
+                <br><br>
+                <p class="help-txt animated fadeIn in5"> Za pokretanje kviza potrebno je da korisnik napravi svoj
+                    korisnički nalog klikom na dugme registracija. <br>
+                    Kada pristupite polju registracija unosite tražene podatke kako bi ste napravili korisnički
+                    nalog.<br>
+                    Nakon kreiranja naloga sledeće što treba da uradite je da se ulogujete <br> sa korisničkim imenom i
+                    lozinkom koju ste odredili prilikom registracije.</p>
+                <br> <br>
+                <p class="help-txt animated fadeIn in5"> Kada se uloguje pristupate kvizu gde možete učitati Vašu
+                    fotografiju, proveriti rang listu i pokrenuti kviz.
+                    <br>
+                    Kviz se pokreće klikom na dugme igraj kada se otvara polje predvidjeno za kviz <br> i u tom polju se
+                    nalazi dugme start kviz.
+                    <br>
+                    Klikom na dugme strart kviz pojavljuju se pitanja i 4 odgovora od kojih je samo jedan tačan.</p>
+                <br> <br>
+                <p class="help-txt animated fadeIn in5">Takmičar bira jedan od odgovora klikom na ponudjene odgovore.
+                    <br> Ako je odgovor tačan pojaviće se zeleni krug,
+                    a ako ogovor nije tačan pojavice se crveni krug. <br> Vreme za davanje odgovora je ograničeno na 15
+                    sekundi. <br>
+                    Ako takmičar ne odgovori na dato pitanje u zadatom vremenu automatski se računa <br> kao netačan
+                    odgovor
+                    i prelazi se na sledeće pitanje. </p>
+                <br> <br>
+                <p class="help-txt animated fadeIn in5"> Ukupno ima 32 pitanja u kvizu. Iz svake oblasti po 4 pitanja
+                    koja su medjusobno povezana. <br>
+                    Rezultat se prikazuje kada se odgovori na svih 32 pitanja ili istekne vreme predvidjeno za kviz <br>
+                    i on je izažen u procentima. </p> <br><br>
+                <p class="help-txt animated fadeIn in5">Takodje ćete imati opciju da upišete Vaš rezultat na rang listu
+                    klikom na polje gde je prikazan rezultat <br> koji će Vas odvesti na novu stranicu gde će biti
+                    potrebno da unesete korisničko ime <br> i klikom na dugme sačuvaj šačuvate rezultat. <br>
+                    Što će Vas vratiti na korisnički nalog i polje za igru. </p> <br> <br>
+                <p class="help-txt animated fadeIn in5"> U svakom trenutku možete resetovati kviz klikom na dugme reset
+                    kviz.</p> <br> <br>
+                <p class="help-txt animated fadeIn in5">Ako želite u svakom trenutku možete poboljšati ugodjaj igranja
+                    kviza <br> tako što ćete pusti muziku klikom na dugme play.
+                    <br> <br> Takodje muziku možete zaustaviti u svakom trenutku klikom na dugme pause.</p>
+                <br> <br>
+                <p class="help-txt animated fadeIn in5"> Na rang listi će biće prikazana 4 najbolja rezultata koje su
+                    ostvarili registrovani korisnici. <br>
+                    Rezultatima možete pristupiti klikom na dugme rang list.</p>
+                <br><br>
+                <p class="help-txt animated fadeIn in5"> Admin kviza će biti u mogućnosti da ubacuje nova pitanja u
+                    kviz.</p>
+
+
+            </div>
+            <br><br>
+            <div class="music animated fadeIn in6">
+                <audio id="my-audio">
+
+                    <source src="../music/background-music.mp3" type="audio/mpeg" autoplay="autoplay" loop> Your browser
+                    does
+                    not support the audio element.
+                </audio>
+
+
+
+                <img src="../image/musicbtn.png" alt="play" onclick="playAudio()"
+                    class=" btn-music mrg-right img-responsive animated fadeIn" type="button">
+                <img src="../image/musicbtn-pause.png" alt="pause" onclick="pauseAudio()"
+                    class=" btn-music img-responsive animated fadeIn">
+            </div>
+            <br><br>
+
+            <div class="social-section animated fadeIn in7">
+                <p class="social-txt">Follow Us</p>
+
+                <a class="social" href="https://www.facebook.com/" target="_blank">
+                    <i class="fa fa-facebook-square fa-2x"></i>
+                </a>
+
+                <a class="social" href="https://twitter.com/" target="_blank">
+                    <i class="fa fa-twitter-square fa-2x"></i>
+                </a>
+
+                <a class="social" href="https://www.instagram.com/" target="_blank">
+                    <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+
+
+            </div>
+            <br><br>
+            <div class="back-section animated fadeIn in-btn">
+            
+                <button class="back " onclick="showIndex()">
+                    <img src="../image/backQuiz5.png" alt="backQuiz" class="img-back img-responsive ">
+                </button>
+            </div>
 
         </div>
-   </div> 
+        <script src="../js/main.js"></script>
 </body>
+
 </html>

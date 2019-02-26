@@ -55,45 +55,15 @@ function showHideRankList(elementId) {
       x.style.display = "none";
     } 
   };
-new Vue({
-    el:'#photo-section',
-    data :{
-        image:''
-    },
-    beforeMount(){
-        var vm = this
-        console.log('before Mounted');
-        vm.get('img')
-    },
-    methods : {
-        get(key){
-            this.image=localStorage.getItem(key);
-        },
-        set(key){
-            var vm = this
-            try{
-                localStorage.setItem(key,this.image);
-            }
-            catch(e){
-                console.log(`Storage failed: ${e}`);
-            }
-        },
-        loadFile(e){
-            var files = e.target.files || e.dataTransfer.files;
-            if(!files.length)
-            return;
-            this.createimage(file[0]);
 
-        },
-        createimage(file){
-            var image = new Image();
-            var reader = new FileReader();
-            reader.onload = e =>{
-                vm.image = e.target.result;
-                vm.set('img');
+  function showRegLog() {
+    window.location.assign("register-login.html");
+  } 
+  function showHelp() {
+    window.location.assign("help.html");
+  } 
 
-            },
-            reader.readAsDataURL(file);
-        }
-    }
-})
+  function showIndex() {
+    window.location.assign("index.html");
+  } 
+

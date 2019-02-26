@@ -89,7 +89,7 @@
                         <button id="finalScore" class="btn-menu " onclick="showHideRankList('highScores');">Rank
                             list</button>
                         <div id="highScores" style="display:none" class="animated fadeInRight">
-                            <img src="image/points.png" alt="points" class="img-points img-responsive">
+                            <img src="../image/points.png" alt="points" class="img-points img-responsive">
                             <br><br>
 
                             <ul id="highScoresList"></ul>
@@ -118,7 +118,7 @@
 
                                 </div>
                                 <div id="timer">
-                                    <img src="image/time.png" alt="" class="timer-img">
+                                    <img src="../image/time.png" alt="" class="timer-img">
                                     <div id="counter"></div>
                                     <div id="btimeGauge"></div>
                                     <div id="timeGauge"></div>
@@ -186,9 +186,9 @@
     <br><br>
 
     <div class="back-section animated fadeIn in-btn">
-        <a class="back " href="index.html">
-            <img src="../image/backQuiz5.png" alt="backQuiz" class="img-back ">
-        </a>
+        <button class="back " onclick="showIndex()">
+            <img src="../image/backQuiz5.png" alt="backQuiz" class="img-back img-responsive">
+        </button>
     </div>
 
 
@@ -200,7 +200,7 @@
 
 
     <script src="../quizstart.js"> </script>
-    
+
     <script>
         //Rank list
         const highScoresList = document.getElementById("highScoresList");
