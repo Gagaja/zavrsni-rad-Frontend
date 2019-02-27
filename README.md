@@ -1,50 +1,49 @@
 # zavrsni-rad-Frontend
 html,css,js
 
-4Quiz je kviz znanja gde će takmičari imati priliku da provere svoje znanje iz 4 oblasti. 
-Takmičari će odgovarati na pitanja iz nauke, sporta, zabave i umetnosti.
+4Quiz is a quiz of knowledge where competitors will have the opportunity to check their knowledge in 4 areas.
+Competitors will answer questions from science, sports, entertainment and art.
 
-Svaka oblast će sadržati više pojedinačnih celina. Tako da će oblast nauka sadržati celine kao što su 
-matematika,hemija,fizika,geografija... Oblast sport bi sadržala sve sportove ,oblast zabava će sadržati 
-muziku,film,crtani film,serije, a oblast umetnost književsnost,slikarstvo, strip.
+Each area will be composed of  several individual fields, so the science area will contain fileds such as
+mathematics, chemistry, physics, geography. The area of sport will contain all sports, area of entertainment will contain music, film, cartoon, series, art and literature, painting, comics.
 
-Za pokretanje kviza potrebno je da korisnik napravi svoj korisnički nalog klikom na dugme registracija. 
-Kada pristupite polju registracija unosite tražene podatke kako bi ste napravili korisnički nalog.
-Nakon kreiranja naloga sledeće što treba da uradite je da se ulogujete 
-sa korisničkim imenom i lozinkom koju ste odredili prilikom registracije.
+In order to start the quiz, it is necessary for the user to create his / her account by clicking on the registration button.
+When you access the registry field, it is nececssary to enter the required information to create user account.
+After creating the account, the next thing you need to do is to sign in with the username and password you specified once registering.
 
-Kada se uloguje pristupate kvizu gde možete učitati Vašu fotografiju, proveriti rang listu i pokrenuti kviz. 
-Kviz se pokreće klikom na dugme igraj kada se otvara polje predvidjeno za kviz 
-i u tom polju se nalazi dugme start kviz. 
-Klikom na dugme strart kviz pojavljuju se pitanja i 4 odgovora od kojih je samo jedan tačan.
+When you log in, you access the quiz where you can  do variety of things such as upload your photo, check the ranking list and run the quiz.
 
-Takmičar bira jedan od odgovora klikom na ponudjene odgovore. 
-Ako je odgovor tačan pojaviće se zeleni krug, a ako ogovor nije tačan pojavice se crveni krug. 
-Vreme za davanje odgovora je ograničeno na 15 sekundi. 
-Ako takmičar ne odgovori na dato pitanje u zadatom vremenu automatski se računa 
-kao netačan odgovor i prelazi se na sledeće pitanje.
+The quiz is triggered by clicking on the play button when the box provided for the quiz is opened
+and there is a start button in that field.
 
-Ukupno ima 32 pitanja u kvizu. Iz svake oblasti po 4 pitanja koja su medjusobno povezana. 
-Rezultat se prikazuje kada se odgovori na svih 32 pitanja ili istekne vreme predvidjeno za kviz 
-i on je izažen u procentima.
+By clicking the start quiz button, questions appear along with  4 possible answers, one of which is the  correct one.
 
-Takodje ćete imati opciju da upišete Vaš rezultat na rang listu klikom na polje gde je prikazan rezultat 
-koji će Vas odvesti na novu stranicu gde će biti potrebno da unesete korisničko ime 
-i klikom na dugme sačuvaj šačuvate rezultat. 
-Što će Vas vratiti na korisnički nalog i polje za igru.
+The competitor chooses one of the answers by clicking on the answers provided.
+If the answer is correct, the green circle will appear on the bootom of the screen and if the answer is not correct, the red circle will appear.
 
-U svakom trenutku možete resetovati kviz klikom na dugme reset kviz.
+Response time for answer is limited to 15 seconds.
 
-Ako želite u svakom trenutku možete poboljšati ugodjaj igranja kviza 
-tako što ćete pusti muziku klikom na dugme play. 
+If the competitor does not answer the given question at the given time, it automatically counts
+as an inaccurate answer and the next question will appear.
 
-Takodje muziku možete zaustaviti u svakom trenutku klikom na dugme pause.
+There are 32 questions in total in the quiz. From each area, there are 4 questions that are interconnected.
+
+The result is displayed when all 32 questions are answered or when the time predicted for the quiz has expired, the result is expressed in percentages.
+
+You will also have the option to enter your score in the ranking list by clicking on the field where the result is displayed, which will take you to a new page where you will need to enter your username
+and click on the save button in order to save the result.
+
+After entering your score in the ranking list you will be returned to the user account and the playing field screen.
+
+You can reset your quiz at any time by clicking the reset button.
 
 
+If you want to improve your quiz gameplay at any given time you are able to play the quiz music by clicking the music play icon.
 
-Na rang listi će biće prikazana 4 najbolja rezultata koje su ostvarili registrovani korisnici. 
-Rezultatima možete pristupiti klikom na dugme rang list.
+You can also stop the music at any given time by clicking the pause icon.
 
+The ranking list  will show the 4 best results achieved by registered users.
 
+You can access the results by clicking on the ranking list.
 
-Admin kviza će biti u mogućnosti da ubacuje nova pitanja u kviz.
+Administrator of the  quiz will be able to insert new questions into the quiz.
